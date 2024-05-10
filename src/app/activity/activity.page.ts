@@ -11,26 +11,30 @@ import { MyCaloriesService } from '../my-calories.service';
   imports: [IonButtons , IonContent , IonHeader , IonRadio , IonInput , IonTitle , IonList , IonToolbar , CommonModule , IonButton , FormsModule , IonItem , IonLabel , IonBackButton , IonText]
 })
 export class ActivityPage {
-  caloriesInfo: any[] = [];
-  activity: string = "";
+  caloriesInfo: any[] = []; // Array to store daily calorie information
+  activity: string = ""; // Variable to store user input activity
 
   constructor(private MyCaloriesService: MyCaloriesService) {}
 
+  // Function to retrieve daily calorie data based on user activity
   async GetDailyData() {
+    // Check if the activity input is not empty
     if (this.activity.trim() !== '') {
-      console.log('User input:', this.activity);
+      console.log('User input:', this.activity); // Log user input activity to console
       try {
-        const response = await this.MyCaloriesService.GetDailyData(this.activity).toPromise(); // Convert Observable to Promise
-        this.caloriesInfo = response;
+        // Call the MyCaloriesService to get daily data for the provided activity
+        const response = await this.MyCaloriesService.GetDailyData(this.activity).toPromise(); 
+        this.caloriesInfo = response; // Assign the response data to the caloriesInfo array
       } catch (error) {
-        console.error('Error getting activities info:', error);
+        console.error('Error getting activities info:', error); // Log any errors that occur during data retrieval
       }
     } else {
-      console.log('activity is empty');
+      console.log('activity is null'); // Log message if activity input is empty
     }
   }
 
+  // Function to update the activity variable based on user input
   updateActivity(event: any) {
-    this.activity = event.target.value;
+    this.activity = event.target.value; // Update the activity variable with the value from the input field
   }
 }
