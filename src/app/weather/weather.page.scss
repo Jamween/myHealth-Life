@@ -1,5 +1,10 @@
 /* Global Styles */
 
+/* Back Button Styles */
+.back-button {
+  --color: #fff; /* Change back button color to white */
+}
+
 /* Style for the main container of the weather page */
 .weather-page {
   padding: 0; /* Reset padding */
@@ -33,4 +38,9 @@
 .weather-info {
   font-size: 16px; /* Medium font size */
   color: #555; /* Dark gray color */
+}
+
+.large-text {
+  font-size: 24px; 
+  font-weight: bold;
 }

@@ -4,11 +4,11 @@
   <!-- Header section -->
   <ion-toolbar color="danger">
     <!-- Back button -->
-    <ion-button slot="start">
+    <ion-buttons slot="start">
       <ion-back-button defaultHref="/"></ion-back-button>
-    </ion-button>
+    </ion-buttons>
     <!-- Title -->
-    <ion-title class="header-title">Your Weather Forecast</ion-title>
+    <ion-title class="header-title">Your Local Forecast</ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -23,10 +23,10 @@
       </ion-card-header>
       <!-- Card content -->
       <ion-card-content>
+        <h2>No matter the weather, its always good to get outside! it does wonders for your health </h2>
         <!-- Temperature information -->
-        <p class="weather-info">Temperature: {{ weatherInfo.main.temp }}</p>
-        <!-- Humidity information -->
-        <p class="weather-info">Humidity: {{ weatherInfo.main.humidity }}</p>
+        <p class="weather-info">Temperature: <span class="large-text">{{ weatherInfo.main.temp }}°C</span></p>
+        <p class="weather-info">Humidity: <span class="large-text">{{ weatherInfo.main.humidity }}%</span></p>
       </ion-card-content>
     </ion-card>
   </div>

@@ -1,59 +1,43 @@
 /* Global Styles */
-
-/* Style for the main container of the nutrition page */
 .nutrition-page {
-  padding: 20px; /* Add padding */
+  padding: 20px;
 }
 
 /* Content Wrapper Styles */
-
-/* Style for the wrapper containing the content */
 .content-wrapper {
-  padding: 20px; /* Add padding */
-  background-color: #f9f9f9; /* Light gray background */
-  border-radius: 10px; /* Rounded corners */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow effect */
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 /* Form Styles */
-
-/* Style for input items within the form */
 .input-item {
-  margin-bottom: 20px; /* Add margin at the bottom */
+  margin-bottom: 20px;
 }
 
 /* Button Styles */
-
-/* Style for the submit button */
 .submit-button {
-  margin-top: 20px; /* Add margin at the top */
+  margin-top: 20px;
 }
 
-/* Food Query Styles */
-
-/* Style for the food query message */
-.food-query {
-  margin-top: 20px; /* Add margin at the top */
-  font-weight: bold; /* Bold font weight */
+/* Info Wrapper Styles */
+.info-wrapper {
+  margin-top: 20px;
 }
 
-/* Nutritional Info Styles */
-
-/* Styles for the list items displaying nutritional information */
+/* Displayed Results Styles */
 .info-list ion-item {
-  background-color: #fff; /* White background */
-  border-radius: 10px; /* Rounded corners */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow effect */
+  font-size: 20px; /* Adjust the font size to make it bigger */
+  font-weight: bold; /* Make the text bold */
+  color: #333; /* Change the text color if needed */
 }
 
-/* Style for the name of the item */
 .item-name {
-  font-size: 18px; /* Larger font size */
-  margin-bottom: 5px; /* Add margin at the bottom */
+  margin-bottom: 5px;
 }
 
-/* Style for the additional information about the item */
 .item-info {
-  font-size: 16px; /* Medium font size */
-  color: #555; /* Dark gray color */
+  font-size: 16px;
+  color: #555; /* Adjust the color if needed */
 }
