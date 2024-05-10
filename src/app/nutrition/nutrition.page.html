@@ -1,0 +1,45 @@
+<!-- nutrition.page.html -->
+
+<ion-header>
+  <!-- Header section -->
+  <ion-toolbar color="danger">
+    <!-- Back button -->
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <!-- Title -->
+    <ion-title class="header-title">Nutrition Info</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="nutrition-page">
+  <!-- Main content section -->
+  <div class="content-wrapper">
+    <!-- Form section -->
+    <form (ngSubmit)="getNutritionalInfo()">
+      <!-- Input field for food items and amounts -->
+      <ion-item lines="full" class="input-item">
+        <ion-label position="floating">Enter your food items and amounts</ion-label>
+        <ion-input type="text" (ionInput)="updateFoodQuery($event)" required placeholder="e.g., 1 apple and 1 banana"></ion-input>
+      </ion-item>
+      
+      <!-- Submit button -->
+      <ion-button expand="block" type="submit" color="danger" class="submit-button">Get Nutritional Info</ion-button>
+    </form>
+
+    <!-- Display food query -->
+    <div *ngIf="foodQuery" class="food-query">You have entered: {{ foodQuery }}</div>
+
+    <!-- Display nutritional information -->
+    <ion-list *ngIf="nutritionalInfo" class="info-list">
+      <ion-item lines="full" *ngFor="let item of nutritionalInfo.items">
+        <ion-label>
+          <!-- Name of the food item -->
+          <h2 class="item-name">{{ item.name }}</h2>
+          <!-- Calories and serving size information -->
+          <p class="item-info">Calories: {{ item.calories }} | Serving Size: {{ item.serving_size_g }} g</p>
+        </ion-label>
+      </ion-item>
+    </ion-list>
+  </div>
+</ion-content>

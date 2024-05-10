@@ -1,0 +1,75 @@
+/* Global Styles */
+
+/* Style for the body */
+body {
+  font-family: Arial, sans-serif; /* Set font family */
+  margin: 0; /* Reset margin */
+  padding: 0; /* Reset padding */
+  background-color: #f5f5f5; /* Light gray background */
+}
+
+/* Header Styles */
+
+/* Style for the header toolbar */
+ion-header {
+  background-color: #c62828; /* Dark red background */
+}
+
+/* Style for the toolbar content */
+ion-toolbar {
+  color: #fff; /* White text color */
+  text-align: center; /* Center-align the text */
+}
+
+/* Content Styles */
+
+/* Style for the main content area */
+ion-content {
+  padding: 20px; /* Add padding */
+}
+
+/* Style for the welcome message section */
+#welcome-message {
+  text-align: center; /* Center-align text */
+  margin-bottom: 30px; /* Add margin at the bottom */
+}
+
+/* Style for the welcome message title */
+#welcome-message h1 {
+  font-size: 32px; /* Larger font size */
+  color: #333; /* Dark gray text color */
+  margin-bottom: 10px; /* Add margin at the bottom */
+}
+
+/* Style for the welcome message paragraph */
+#welcome-message p {
+  font-size: 20px; /* Medium font size */
+  color: #666; /* Gray text color */
+}
+
+/* Button Styles */
+
+/* Style for the quick access buttons container */
+.quick-access {
+  display: flex; /* Use flexbox layout */
+  flex-direction: column; /* Stack buttons vertically */
+  align-items: center; /* Center-align items horizontally */
+}
+
+/* Style for each quick access button */
+.quick-access ion-button {
+  margin: 10px 0; /* Add margin top and bottom */
+  width: 80%; /* Set width to 80% of the container */
+  --background: #43a047; /* Dark green background */
+  color: #fff; /* White text color */
+  border-radius: 8px; /* Rounded corners */
+  font-size: 18px; /* Medium font size */
+  text-transform: uppercase; /* Convert text to uppercase */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow effect */
+  transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+/* Hover style for quick access buttons */
+.quick-access ion-button:hover {
+  --background: #388e3c; /* Light green on hover */
+}

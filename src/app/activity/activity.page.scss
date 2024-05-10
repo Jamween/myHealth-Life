@@ -1,0 +1,63 @@
+/* Global Styles */
+
+/* Style for the main container of the activity tracker page */
+.activity-tracker-page {
+  padding: 0; /* Reset padding */
+}
+
+/* Content Wrapper Styles */
+
+/* Style for the wrapper containing the content */
+.content-wrapper {
+  padding: 20px; /* Add padding */
+  background-color: #f9f9f9; /* Light gray background */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
+
+/* Form Styles */
+
+/* Styles for the form */
+.form {
+  width: 100%; /* Full width */
+}
+
+/* Style for input items within the form */
+.input-item {
+  margin-bottom: 20px; /* Add margin at the bottom */
+}
+
+/* Button Styles */
+
+/* Style for the submit button */
+.submit-button {
+  margin-top: 20px; /* Add margin at the top */
+}
+
+/* Info Wrapper Styles */
+
+/* Style for the wrapper containing information */
+.info-wrapper {
+  margin-top: 20px; /* Add margin at the top */
+}
+
+/* Nutritional Info Styles */
+
+/* Styles for the list items displaying nutritional information */
+.info-list ion-item {
+  background-color: #fff; /* White background */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
+
+/* Style for the name of the item */
+.item-name {
+  font-size: 18px; /* Larger font size */
+  margin-bottom: 5px; /* Add margin at the bottom */
+}
+
+/* Style for the calories per hour */
+.calories-per-hour {
+  font-size: 16px; /* Medium font size */
+  color: #555; /* Dark gray color */
+}

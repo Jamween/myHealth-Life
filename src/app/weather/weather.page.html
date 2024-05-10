@@ -1,0 +1,33 @@
+<!-- weather.page.html -->
+
+<ion-header>
+  <!-- Header section -->
+  <ion-toolbar color="danger">
+    <!-- Back button -->
+    <ion-button slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-button>
+    <!-- Title -->
+    <ion-title class="header-title">Your Weather Forecast</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="weather-page">
+  <!-- Main content section -->
+  <div class="content-wrapper">
+    <!-- Weather card section -->
+    <ion-card *ngIf="weatherInfo" class="weather-card">
+      <!-- Card header -->
+      <ion-card-header>
+        Your Local Weather Information
+      </ion-card-header>
+      <!-- Card content -->
+      <ion-card-content>
+        <!-- Temperature information -->
+        <p class="weather-info">Temperature: {{ weatherInfo.main.temp }}</p>
+        <!-- Humidity information -->
+        <p class="weather-info">Humidity: {{ weatherInfo.main.humidity }}</p>
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>

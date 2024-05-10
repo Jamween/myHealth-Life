@@ -1,0 +1,38 @@
+<!-- home.page.html -->
+
+<ion-header>
+  <!-- Header section -->
+  <ion-toolbar color="danger"> 
+    <!-- Title -->
+    <ion-title>
+      Health and Fitness Tracker
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="home-page"> 
+  <!-- Main content section -->
+  <div id="welcome-message">
+    <!-- Welcome message -->
+    <h1>Welcome to MyHealth&Life!</h1>
+    <p>The only app you need to track your calories input and output and the weather!</p>
+  </div>
+
+  <!-- Quick access buttons -->
+  <div class="quick-access">
+    <!-- Button for Activity Tracker -->
+    <ion-button expand="block" routerLink="/activity" routerDirection="forward" color="success">
+      Activity Tracker and Calories
+    </ion-button>
+
+    <!-- Button for Nutrition Tracker -->
+    <ion-button expand="block" routerLink="/nutrition" color="success">
+      Nutrition Tracker and Calories
+    </ion-button>
+
+    <!-- Button for Weather Tracker -->
+    <ion-button expand="block" routerLink="/weather" color="danger">
+      Check your Local Weather
+    </ion-button>
+  </div>
+</ion-content>
