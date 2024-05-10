@@ -4,3 +4,4 @@ API's Used
 Weather: https://openweathermap.org/api
 Calorie Counter: https://calorieninjas.com/api
 Activity Counter: https://api-ninjas.com/api/caloriesburned
+/
